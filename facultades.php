@@ -1,5 +1,6 @@
 <?php
-include 'index.php'
+include 'index.php';
+include 'conexion.php';
 ?>
 
 <h1>Tabla Facultades</h1>
@@ -12,14 +13,29 @@ include 'index.php'
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td>10</td>
-      <td>Artes</td>
-      <td>
-        <button type="button" class="btn btn-success">EDITAR</button>
-        <button type="button" class="btn btn-danger">ELIMINAR</button>
-      </td>
-    </tr>
+
+  <?php
+            $sql = "SELECT * FROM facultades";
+            $result = $conn->query($sql);
+
+            if ($result->num_rows > 0) {
+                while($row = $result->fetch_assoc()) {
+                    echo "<tr>";
+                    echo "<td>".$row["codigo_fac"]."</td>";
+                    echo "<td>".$row["nombre_fac"]."</td>";
+
+                    echo "<td>
+                            <a class='btn btn-success'>EDITAR</a>
+                            <a class='btn btn-danger'>ELIMINAR</a>
+                         </td>";
+
+                    
+                }
+            } else {
+                echo "0 resultados";
+            }
+            $conn->close();
+        ?>
 
   </tbody>
 </table>
