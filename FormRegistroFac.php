@@ -5,7 +5,7 @@ include 'conexion.php';
 
 <div class="container">
 <!-- Default form contact -->
-<form class="text-center border border-light p-5" action="#!">
+<form class="text-center border border-light p-5" action="registroFac.php" method="POST">
 
     <p class="h4 mb-4">Registro Facultades</p>
 
@@ -13,7 +13,7 @@ include 'conexion.php';
     <input type="text" id="codigoFac" name="codigoFac" class="form-control mb-4" placeholder="Codigo">
 
     <!-- Email -->
-    <input type="email" id="nombreFac" name="nameFac" class="form-control mb-4" placeholder="Facultad">
+    <input type="text" id="nombreFac" name="nombreFac" class="form-control mb-4" placeholder="Facultad">
 
 
     <!-- Send button -->

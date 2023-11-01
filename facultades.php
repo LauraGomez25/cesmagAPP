@@ -30,7 +30,7 @@ include 'conexion.php';
 
                     echo "<td>
                             <a class='btn btn-success'>EDITAR</a>
-                            <a class='btn btn-danger'>ELIMINAR</a>
+                            <a class='btn btn-danger' href='eliminarFac.php?id=".$row["codigo_fac"]."'>Eliminar</a>
                          </td>";
 
                     
