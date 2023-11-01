@@ -5,7 +5,7 @@ include 'conexion.php';
 <div class="container">
 <h1>Tabla Facultades</h1>
 <div aling="right">
-  <a class="btn btn-primary">Adicionar</a>
+  <a class="btn btn-primary" href="FormRegistroFac.php">Adicionar</a>
 </div>
 
 <table class="table">
