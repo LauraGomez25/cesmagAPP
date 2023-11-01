@@ -2,8 +2,12 @@
 include 'index.php';
 include 'conexion.php';
 ?>
-
+<div class="container">
 <h1>Tabla Facultades</h1>
+<div aling="right">
+  <a class="btn btn-primary">Adicionar</a>
+</div>
+
 <table class="table">
   <thead>
     <tr>
@@ -39,3 +43,4 @@ include 'conexion.php';
 
   </tbody>
 </table>
+          </div>
